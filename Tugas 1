@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
-  <title>Login - Perusahaan Sessek</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .login-box {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      width: 300px;
-      text-align: center;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-    input {
-      width: 90%;
-      padding: 10px;
-      margin: 8px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background: #2980b9;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    button:hover {
-      background: #1f618d;
-    }
-    .error {
-      color: red;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-  </style>
+  <title>Resume</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
 </head>
-<body>
-  <div class="login-box">
-    <h2>Login Perusahaan ABC</h2>
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="login()">Login</button>
-    <p class="error" id="errorMsg"></p>
-  </div>
+<body data-new-gr-c-s-check-loaded="14.1254.0" data-gr-ext-installed="">
+  <h1>JDaniel Fortunatus</h1>
+  <img src="./profile-img.png" alt="profile image of Jane Doe" height="100">
 
-  <script>
-    function login() {
-      let user = document.getElementById("username").value;
-      let pass = document.getElementById("password").value;
-
-      // Username & password sederhana (contoh)
-      if (user === "admin" && pass === "1234") {
-        window.location.href = "perusahaan.html"; // ke halaman perusahaan
-      } else {
-        document.getElementById("errorMsg").textContent = "Username atau Password salah!";
-      }
-    }
-  </script>
+  <h2>Summary</h2>
+  <p>Saya punya skill cuma menikmati hidup saja</p>
+  <hr>
+  <h2>Education</h2>
+  <ul>
+    <li>TK elim (2010-2011)</li>
+    <li>SDN Tamamaung Makassae (2011-2013)</li>
+    <li>SDN 108 Rantelemo (2013-2016)</li>
+    <li>SMPN 1 Makale (2016-2019)</li>
+    <li>SMAN 1 Tana Toraja (2019-2022)</li>
+    <li>Universitas Hasanuddin (2022-sekarang)</li>
+  </ul>
+  <hr>
+  <h2>Pengalaman Kerja/Organisasi</h2>
+  <ul>
+    <li>
+      <h3>Keorganisasian</h3>
+      <p>June 2014 - May 2018</p>
+      <ul>
+        <li>Aktif di Organisasi PMKO UNHAS</li>
+        <li>Aktif di sebuah Band Musik</li>
+        <li>Maintained customer records and updated account information</li>
+      </ul>
+    </li>
+    <li>
+  <hr>
+  <h2>Skills</h2>
+  <ul>
+    <li>Customer service: ⭐️⭐️⭐️⭐️⭐️</li>
+    <li>Microsoft Office Suite: ⭐️⭐️⭐️</li>
+    <li>Organizational skills: ⭐️⭐️⭐️⭐️</li>
+    <li>Music: ⭐️⭐️⭐️⭐️⭐️</li>
+    <li>Website Programmer: ⭐️⭐️⭐️⭐️⭐️</li>
+    <li>Machine Learning: ⭐️⭐️⭐️⭐️⭐️</li>
+    <li>Game: ⭐️⭐️⭐️⭐️⭐️</li>
+  </ul>
+  <hr>
+  <h2>Penghargaan</h2>
+  <ul>
+    <li> Selamat dari kiamat 2012</li>
+    <li> Selamat dari wabah corona 2022</li>
+    <li> Sudah menjalani hidup dari 2004 hingga saat ini </li>
+    <li> Band contest Tana Toraja 2022 </li>
+  </ul>
+  <hr>
+  <h2>Other</h2>
+  <ul>
+    <li><a href="./hobbies.html">My Hobbies</a></li>
+    <li><a href="./contact.html">Contact Me</a></li>
+  </ul>
 </body>
+  <footer>
+    <p>© Daniel Fortunatus. All rights reserved.</p>
+  </footer>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
 </html>
