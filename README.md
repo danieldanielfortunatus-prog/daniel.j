@@ -1,2 +1,2 @@
-# daniel.j
-Mau Ngoding bang
+# daniel.f
+KAMUSARI
