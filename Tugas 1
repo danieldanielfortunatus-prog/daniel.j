@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="UTF-8">
-  <title>Resume</title>
+  <title>Bukankah ini My...</title>
 <head>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <title>Bukankah ini My...</title>
 </head>
-<body data-new-gr-c-s-check-loaded="14.1254.0" data-gr-ext-installed="">
-  <h1>JDaniel Fortunatus</h1>
-  <img src="./profile-img.png" alt="profile image of Jane Doe" height="100">
+<body data-new-gr-c-s-check-loaded="14.1254.0" data-
 
-  <h2>Summary</h2>
+gr-ext-installed="">
+  <h1>Daniel Fortunatus</h1>
+  <img src="foto.JPG" alt="Foto Profil" width="300">
+
+
+  <h2>Kata-kata Hari ini</h2>
   <p>Saya punya skill cuma menikmati hidup saja</p>
   <hr>
   <h2>Education</h2>
@@ -27,31 +30,34 @@
   <ul>
     <li>
       <h3>Keorganisasian</h3>
-      <p>June 2014 - May 2018</p>
       <ul>
         <li>Aktif di Organisasi PMKO UNHAS</li>
         <li>Aktif di sebuah Band Musik</li>
-        <li>Maintained customer records and updated account information</li>
+        <li>Maintained customer records and updated 
+
+account information</li>
       </ul>
     </li>
     <li>
   <hr>
   <h2>Skills</h2>
   <ul>
-    <li>Customer service: ⭐️⭐️⭐️⭐️⭐️</li>
-    <li>Microsoft Office Suite: ⭐️⭐️⭐️</li>
-    <li>Organizational skills: ⭐️⭐️⭐️⭐️</li>
-    <li>Music: ⭐️⭐️⭐️⭐️⭐️</li>
-    <li>Website Programmer: ⭐️⭐️⭐️⭐️⭐️</li>
-    <li>Machine Learning: ⭐️⭐️⭐️⭐️⭐️</li>
-    <li>Game: ⭐️⭐️⭐️⭐️⭐️</li>
+    <li>Customer service</li>
+    <li>Microsoft Office Suite</li>
+    <li>Organizational skills</li>
+    <li>Music</li>
+    <li>Website Programmer</li>
+    <li>Machine Learning</li>
+    <li>Game</li>
   </ul>
   <hr>
   <h2>Penghargaan</h2>
   <ul>
     <li> Selamat dari kiamat 2012</li>
     <li> Selamat dari wabah corona 2022</li>
-    <li> Sudah menjalani hidup dari 2004 hingga saat ini </li>
+    <li> Sudah menjalani hidup dari 2004 hingga saat 
+
+ini </li>
     <li> Band contest Tana Toraja 2022 </li>
   </ul>
   <hr>
@@ -64,5 +70,9 @@
   <footer>
     <p>© Daniel Fortunatus. All rights reserved.</p>
   </footer>
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+</body><grammarly-desktop-integration data-grammarly-
+
+shadow-root="true"></grammarly-desktop-
+
+integration></html>
 </html>
