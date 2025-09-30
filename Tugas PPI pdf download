@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Daniel Fortunatus</title>
+  <!-- jsPDF & html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f9;
+    }
+    .cv-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 { color: #333; }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-top: 20px;
+      background: #007BFF;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container" id="cv-content">
+    <h1>Daniel Fortunatus</h1>
+    <!-- Foto dari internet -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" 
+         alt="Foto Profil" class="profile-pic">
+
+    <h2>Data Pribadi</h2>
+    <p>Email: danieldanielfortunatus@gmail.com</p>
+    <p>Telepon: +62 812 3456 7890</p>
+    <p>Alamat: Makassar, Indonesia</p>
+
+    <h2>Pendidikan</h2>
+    <ul>
+      <li>S1 Fisika - Universitas Hasanuddin (2022 - 2026)</li>
+      <li>SMA Negeri 1 Tana Toraja(2017 - 2020)</li>
+      <li>SMP Negeri 1 Makale(2017 - 2020)</li>
+      <li>SDN 108 Rantelemo(2012 - 2017)</li>
+    </ul>
+
+    <h2>Pengalaman Kerja</h2>
+    <ul>
+      <li>Magang - PT PLN (2025)</li>
+      <li>Asisten Lab Elektronika, Universitas Hasanuddin(2024)</li>
+    </ul>
+
+    <h2>Keterampilan</h2>
+    <ul>
+      <li>Python, C++, HTML</li>
+      <li>PLC & Otomasi</li>
+      <li>Machine Learning (PyTorch)</li>
+    </ul>
+  </div>
+
+  <!-- Tombol Download -->
+  <a class="download-btn" onclick="downloadPDF()">Download CV (PDF)</a>
+
+  <script>
+    async function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const cvElement = document.getElementById("cv-content");
+
+      // Render halaman jadi canvas
+      const canvas = await html2canvas(cvElement, { 
+        scale: 2,
+        useCORS: true // penting supaya gambar dari internet ikut
+      });
+      const imgData = canvas.toDataURL("image/png");
+
+      // Buat PDF baru ukuran A4
+      const pdf = new jsPDF("p", "mm", "a4");
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+
+      // Skala gambar agar pas A4
+      const imgWidth = pageWidth;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+
+      // Simpan PDF
+      pdf.save("CV_Daniel_Fortunatus.pdf");
+    }
+  </script>
+</body>
+</html>
